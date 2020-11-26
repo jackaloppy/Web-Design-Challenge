@@ -1,0 +1,127 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <title>Cloudiness</title>
+    <style>
+        body {
+          background-color: #DFEFFF;
+        }
+        #latitude {
+          font-size: 28px;
+          padding-bottom: 0px;
+          padding-top: 0px;
+          margin-left: 5px;
+        }
+        #summ {
+          width: 69%;
+          float:left;
+          padding: 20px;
+        }
+        #visual {
+          width: 29%;
+          float:right;
+          padding: 20px;
+        }
+        #clear {
+          clear: both;
+        }
+        .border-3 {
+            border-width: 3px;
+            border-color: #9FCEFF;
+            border-style: solid;
+            border-radius: 3px;
+        }
+        .brightness img:hover {
+          opacity: .5;
+        }
+        @media (max-width: 575px) {
+          #summ,#visual {
+            float:none;
+            width: 100%;
+          }
+        }
+      </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-sm navbar-dark bg-primary"> 
+        <img src="https://freedesignfile.com/upload/2017/08/earth-icon-vector.png" width="30" height="30" alt="" loading="lazy">
+        <a class="navbar-brand font-weight-bold" href="landing_page.html" id="latitude">
+          Latitude
+        </a> 
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01" aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarColor01">
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Plots</a>
+              <div class="dropdown-menu">
+                <a class="dropdown-item" href="max_temp.html">Max Temperature</a>
+                <a class="dropdown-item" href="humidity.html">Humidity</a>
+                <a class="dropdown-item" href="cloudiness.html">Cloudiness</a>
+                <a class="dropdown-item" href="wind_speed.html">Wind Speed</a>
+              </div>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="comparison.html">Comparison</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="data.html">Data</a>
+            </li>
+          </ul>
+        </div>
+    </nav>
+
+    <div class="container mt-sm-5 px-0">
+        <div class="bg-white" id="summ">
+          <h3 class="text-primary font-weight-bold pt-2 pb-1">
+            Cloudiness
+          </h3>
+          <hr>
+          <img src="Resources/assets/images/Fig3.png" class="img-fluid" alt="Fig3">
+          <p>
+            Not much to say here either. Interestingly, you can see the precentage of cloud is not a continuous value. 
+            Instead, it's rather categorical as you can clearly see these dots were aligned horizontally. Other than that,
+            there are nothing to say here. Maybe we should integrate the value of cloudiness onto an actual map, which 
+            could tell something interesting. Thanks for reading.
+          </p>
+        </div>
+        <div class="bg-white" id="visual">
+          <h4 class="text-primary pt-2 pb-1">
+            Visualizations  
+          </h4>
+          <hr>
+            <div class="brightness">
+              <a href="max_temp.html">
+                <img src="Resources/assets/images/Fig1.png" class="img-fluid float-left" width=50% alt="Fig1">
+              </a>
+            </div>
+            <div class="brightness">
+              <a href="humidity.html">
+                <img src="Resources/assets/images/Fig2.png" class="img-fluid" width=50% alt="Fig2">
+              </a>
+            </div>
+            <br>
+            <div class="brightness">
+              <a href="cloudiness.html">
+                <img src="Resources/assets/images/Fig3.png" class="img-fluid float-left border-3" width=50% alt="Fig3">
+              </a>
+            </div>
+            <div class="brightness">
+              <a href="wind_speed.html">
+                <img src="Resources/assets/images/Fig4.png" class="img-fluid" width=50% alt="Fig4">
+              </a>
+            </div>
+        </div>
+        <div id="clear"></div>
+    </div>
+  
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+  </body>
+</html>
